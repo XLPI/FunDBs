@@ -4,7 +4,7 @@
 		module="mongofun-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170508050316"
+		publication="20170508115808"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

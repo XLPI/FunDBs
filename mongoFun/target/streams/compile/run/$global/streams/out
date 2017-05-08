@@ -4,118 +4,21 @@
 [0m[[0mdebug[0m] [0m	/media/xlpi/ssdD/PrjScala/dataroot/playWithDBs_git/FunDBs/mongoFun/target/scala-2.12/classes[0m
 [0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar[0m
 [0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.scala-lang.modules/scala-async_2.12/bundles/scala-async_2.12-0.9.6.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.reactivemongo/reactivemongo_2.10/jars/reactivemongo_2.10-0.12.2.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.reactivemongo/reactivemongo-bson-macros_2.10/jars/reactivemongo-bson-macros_2.10-0.12.2.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.reactivemongo/reactivemongo-bson_2.10/jars/reactivemongo-bson_2.10-0.12.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.reactivemongo/reactivemongo_2.12/jars/reactivemongo_2.12-0.12.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.reactivemongo/reactivemongo-bson-macros_2.12/jars/reactivemongo-bson-macros_2.12-0.12.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.reactivemongo/reactivemongo-bson_2.12/jars/reactivemongo-bson_2.12-0.12.2.jar[0m
 [0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.reactivemongo/reactivemongo-shaded/jars/reactivemongo-shaded-0.12.2.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.3.13.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.3.9.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar[0m
+[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/jars/akka-actor_2.12-2.4.14.jar[0m
+[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar[0m
+[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar[0m
+[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/com.typesafe.play/play-iteratees_2.12/jars/play-iteratees_2.12-2.6.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.scala-stm/scala-stm_2.12/jars/scala-stm_2.12-0.8.jar[0m
 [0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/com.chuusai/shapeless_2.10/bundles/shapeless_2.10-2.3.2.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.typelevel/macro-compat_2.10/jars/macro-compat_2.10-1.1.1.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.scalamacros/quasiquotes_2.10/jars/quasiquotes_2.10-2.1.0.jar[0m
-[0m[[0mdebug[0m] [0m	/home/xlpi/.sbt/boot/scala-2.10.4/lib/scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/com.chuusai/shapeless_2.12/bundles/shapeless_2.12-2.3.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar[0m
 [0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.apache.logging.log4j/log4j-api/jars/log4j-api-2.5.jar[0m
 [0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.25.jar[0m
 [0m[[0mdebug[0m] [0m	/home/xlpi/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
-[0m[[31merror[0m] [0m(run-main-0) java.lang.NoClassDefFoundError: scala/Product$class[0m
-java.lang.NoClassDefFoundError: scala/Product$class
-	at akka.util.Timeout.<init>(Timeout.scala:14)
-	at akka.actor.ActorSystem$Settings.<init>(ActorSystem.scala:172)
-	at akka.actor.ActorSystemImpl.<init>(ActorSystem.scala:505)
-	at akka.actor.ActorSystem$.apply(ActorSystem.scala:142)
-	at reactivemongo.api.MongoDriver.<init>(api.scala:862)
-	at mongoObj$.<init>(mongoObj.scala:16)
-	at mongoObj$.<clinit>(mongoObj.scala)
-	at runMyDB$.delayedEndpoint$runMyDB$1(mongoObj.scala:92)
-	at runMyDB$delayedInit$body.apply(mongoObj.scala:88)
-	at scala.Function0.apply$mcV$sp(Function0.scala:34)
-	at scala.Function0.apply$mcV$sp$(Function0.scala:34)
-	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
-	at scala.App.$anonfun$main$1$adapted(App.scala:76)
-	at scala.collection.immutable.List.foreach(List.scala:389)
-	at scala.App.main(App.scala:76)
-	at scala.App.main$(App.scala:74)
-	at runMyDB$.main(mongoObj.scala:88)
-	at runMyDB.main(mongoObj.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at sbt.Run.invokeMain(Run.scala:67)
-	at sbt.Run.run0(Run.scala:61)
-	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
-	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Logger$$anon$4.apply(Logger.scala:85)
-	at sbt.TrapExit$App.run(TrapExit.scala:248)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.lang.ClassNotFoundException: scala.Product$class
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at akka.util.Timeout.<init>(Timeout.scala:14)
-	at akka.actor.ActorSystem$Settings.<init>(ActorSystem.scala:172)
-	at akka.actor.ActorSystemImpl.<init>(ActorSystem.scala:505)
-	at akka.actor.ActorSystem$.apply(ActorSystem.scala:142)
-	at reactivemongo.api.MongoDriver.<init>(api.scala:862)
-	at mongoObj$.<init>(mongoObj.scala:16)
-	at mongoObj$.<clinit>(mongoObj.scala)
-	at runMyDB$.delayedEndpoint$runMyDB$1(mongoObj.scala:92)
-	at runMyDB$delayedInit$body.apply(mongoObj.scala:88)
-	at scala.Function0.apply$mcV$sp(Function0.scala:34)
-	at scala.Function0.apply$mcV$sp$(Function0.scala:34)
-	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
-	at scala.App.$anonfun$main$1$adapted(App.scala:76)
-	at scala.collection.immutable.List.foreach(List.scala:389)
-	at scala.App.main(App.scala:76)
-	at scala.App.main$(App.scala:74)
-	at runMyDB$.main(mongoObj.scala:88)
-	at runMyDB.main(mongoObj.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at sbt.Run.invokeMain(Run.scala:67)
-	at sbt.Run.run0(Run.scala:61)
-	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
-	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Logger$$anon$4.apply(Logger.scala:85)
-	at sbt.TrapExit$App.run(TrapExit.scala:248)
-	at java.lang.Thread.run(Thread.java:745)
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
-[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
-[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
-java.lang.RuntimeException: Nonzero exit code: 1
-	at scala.sys.package$.error(package.scala:27)
-	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
-	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
-	at scala.Option.foreach(Option.scala:236)
-	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
-	at sbt.Defaults$.toError(Defaults.scala:38)
-	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$36$$anonfun$apply$37.apply(Defaults.scala:719)
-	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$36$$anonfun$apply$37.apply(Defaults.scala:717)
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
-	at sbt.std.Transform$$anon$4.work(System.scala:63)
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
-	at sbt.Execute.work(Execute.scala:235)
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-[0m[[31merror[0m] [0m(compile:[31mrun[0m) Nonzero exit code: 1[0m
+[0m[[0mdebug[0m] [0mWaiting for thread New I/O worker #7 to terminate.[0m

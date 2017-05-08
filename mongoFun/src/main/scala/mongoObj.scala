@@ -2,7 +2,7 @@ import com.typesafe.config.ConfigFactory
 
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
-import reactivemongo.api.{MongoConnection, MongoDriver}
+import reactivemongo.api.{DefaultDB, MongoConnection, MongoDriver}
 import reactivemongo.api.collections.bson.BSONCollection
 import reactivemongo.api.commands.WriteResult
 import reactivemongo.bson.BSONDocument
@@ -13,14 +13,19 @@ object mongoObj {
 
     // config from http://reactivemongo.org/releases/0.12/documentation/tutorial/connect-database.html
 
-	import com.typesafe.config.ConfigFactory
-	val baseDir = baseDirectory.value
-	val config = ConfigFactory.parseFile(baseDir / "conf/application.conf")
+//	import com.typesafe.config.ConfigFactory
+//	val baseDir = baseDirectory.value
+//	val config = ConfigFactory.parseFile(baseDir / "conf/application.conf")
 
   val config = ConfigFactory.load()
-  val driver1 = new reactivemongo.api.MongoDriver
-  val connection3 = driver1.connection(List("localhost"))
-  val database = config.getString("mongodb.database")
+  val driver = MongoDriver()
+  val mongoUri = "mongodb://localhost:27017/mydb?authMode=scram-sha1"
+  val parsedUri = MongoConnection.parseURI(mongoUri)
+  val connection = parsedUri.map(driver.connection(_))
+
+  val futureConnection = Future.fromTry(connection)
+  def db1: Future[DefaultDB] = futureConnection.flatMap(_.database("test"))
+  def personCollection = db1.map(_.collection("unicorns"))
 
   val document1 = BSONDocument(
     "name" -> "Stephane",
@@ -48,11 +53,11 @@ object mongoObj {
   val query = BSONDocument("weight" -> BSONDocument(
         "$lt" -> 500 ))
 
-  val findAnimals = dbFromConnection(connection3).onComplete{
-    case Failure(e) => e.printStackTrace()
-    case Success(coll) => coll.find(query)
-
-  }
+//  val findAnimals = dbFromConnection(connection3).onComplete{
+//    case Failure(e) => e.printStackTrace()
+//    case Success(coll) => coll.find(query)
+//
+//  }
 
 
 
@@ -94,15 +99,24 @@ object runMyDB extends App {
 
   import mongoObj._
 
-  val collFuture = dbFromConnection(connection3)
-  val coll = collFuture.onComplete {
-    case Success(collectionMy) => {
-      insertDoc1(collectionMy, document1)
-      println(s"successfully get collection from DB: $collectionMy")
-    }
-    case Failure(e) => e.printStackTrace()
-  }
+//  val collFuture = dbFromConnection(connection3)
+//  val coll = collFuture.onComplete {
+//    case Success(collectionMy) => {
+//      insertDoc1(collectionMy, document1)
+//      println(s"successfully get collection from DB: $collectionMy")
+//    }
+//    case Failure(e) => e.printStackTrace()
+//  }
 
+  val coll = mongoObj.personCollection
+
+  val res = coll.onComplete {
+        case Success(collectionMy) => {
+          insertDoc1(collectionMy, document1)
+          println(s"successfully get collection from DB: $collectionMy")
+        }
+        case Failure(e) => e.printStackTrace()
+      }
 
 
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/playwithdbs.iml" filepath="$PROJECT_DIR$/.idea/modules/playwithdbs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mongofun.iml" filepath="$PROJECT_DIR$/.idea/modules/mongofun.iml" />
     </modules>
   </component>
 </project>

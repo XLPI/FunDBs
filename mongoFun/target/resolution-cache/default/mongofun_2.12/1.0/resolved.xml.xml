@@ -4,7 +4,7 @@
 		module="mongofun_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170508050325"
+		publication="20170508115814"
 	>
 		<description>
 		mongoFUN
@@ -35,7 +35,7 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.2" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.2" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scala-lang.modules" name="scala-async_2.12" rev="0.9.6" conf="compile->default(compile)"/>
-		<dependency org="org.reactivemongo" name="reactivemongo_2.10" rev="0.12.2" conf="compile->default(compile)"/>
+		<dependency org="org.reactivemongo" name="reactivemongo_2.12" rev="0.12.2" conf="compile->default(compile)"/>
 		<dependency org="org.slf4j" name="slf4j-simple" rev="1.7.25" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
